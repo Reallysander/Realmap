@@ -35,10 +35,6 @@ Implementação simples para estudo de sockets e fluxo de I/O em Python.
 
 Python 3.6+ (recomendado 3.8+)
 
-💻 Como rodar
-
-Exemplo de execução:
-
 ### 💻 Como rodar
 
 Você pode **clonar este repositório** ou simplesmente **baixar o arquivo `realmap.py`**.
