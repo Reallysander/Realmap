@@ -5,7 +5,7 @@
 O RealMap é um projeto pessoal e educacional desenvolvido para aprender sobre — e apenas sobre — sockets e varredura de portas na linguagem Python.
 Este repositório contém um script simples (realmap.py) criado com fins puramente didáticos.
 
-🕓 Horário de lançamento (estimado, pode não estar correto o horário)
+🕓 Horário de lançamento
 🌍 Local	🕓 Horário
 🇧🇷 São Paulo (Brasil)	18:20
 🇺🇸 Nova York (EUA)	17:20
@@ -17,7 +17,7 @@ Este repositório contém um script simples (realmap.py) criado com fins puramen
 USE O PROGRAMA APENAS EM AMBIENTES ONDE VOCÊ TENHA PLENA AUTORIZAÇÃO PARA FAZER UM SCAN.
 O uso indevido deste script pode violar leis e políticas de rede.
 
-⚙️ Funcionalidades
+**⚙️ Funcionalidades**
 
 Varredura de portas TCP em um intervalo definido pelo usuário.
 
@@ -31,7 +31,7 @@ Exibir informações sobre o programa
 
 Implementação simples para estudo de sockets e fluxo de I/O em Python.
 
-🧠 Requisitos mínimos
+**🧠 Requisitos mínimos**
 
 Python 3.6+ (recomendado 3.8+)
 
@@ -39,8 +39,20 @@ Python 3.6+ (recomendado 3.8+)
 
 Exemplo de execução:
 
-# Clone o repositório ou baixe os arquivos
+### 💻 Como rodar
+
+Você pode **clonar este repositório** ou simplesmente **baixar o arquivo `realmap.py`**.
+
+```bash
+# Clonar o repositório (opcional)
+git clone https://github.com/reallysander/realmap.git
+
+# Entrar na pasta do projeto
+cd realmap
+
+# Executar o script
 python realmap.py
+
 
 📜 Observação
 
