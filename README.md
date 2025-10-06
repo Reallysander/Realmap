@@ -12,6 +12,8 @@ Este repositório contém um script simples (realmap.py) criado com fins puramen
 🇺🇸 Los Angeles (EUA)	14:20
 🇩🇪 Berlim (Alemanha)	23:20
 🇯🇵 Tóquio (Japão)	06:20 (do dia seguinte)
+
+
 ⚠️ AVISO
 
 USE O PROGRAMA APENAS EM AMBIENTES ONDE VOCÊ TENHA PLENA AUTORIZAÇÃO PARA FAZER UM SCAN.
