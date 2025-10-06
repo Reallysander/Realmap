@@ -1,49 +1,58 @@
-🛰️ RealMap — Scanner de Portas
+<p align="center">
+  <img src="banner.png" alt="Banner do RealMap" width="600">
+</p>
 
-(educacional. NÃO USE PARA FINS MALICIOSOS DE JEITO NENHUM)
+<h1 align="center">🛰️ RealMap — Scanner de Portas</h1>
 
-O RealMap é um projeto pessoal e educacional desenvolvido para aprender sobre — e apenas sobre — sockets e varredura de portas na linguagem Python.
-Este repositório contém um script simples (realmap.py) criado com fins puramente didáticos.
+<p align="center"><b>Projeto educacional. NÃO USE PARA FINS MALICIOSOS DE JEITO NENHUM.</b></p>
 
-🕓 Horário de lançamento
-🌍 Local	🕓 Horário
-🇧🇷 São Paulo (Brasil)	18:20
-🇺🇸 Nova York (EUA)	17:20
-🇺🇸 Los Angeles (EUA)	14:20
-🇩🇪 Berlim (Alemanha)	23:20
-🇯🇵 Tóquio (Japão)	06:20 (do dia seguinte)
+---
 
+## 📖 Sobre o projeto
+O **RealMap** é um projeto pessoal e educacional criado para aprender sobre **sockets** e **varredura de portas** na linguagem **Python**.  
+Ele contém um script simples (`realmap.py`) desenvolvido com fins **puramente didáticos** — perfeito para quem está começando a estudar segurança ofensiva de forma ética.
 
-⚠️ AVISO
+---
 
-USE O PROGRAMA APENAS EM AMBIENTES ONDE VOCÊ TENHA PLENA AUTORIZAÇÃO PARA FAZER UM SCAN.
-O uso indevido deste script pode violar leis e políticas de rede.
+## 🕓 Horário de lançamento
+| 🌍 Local | 🕓 Horário |
+|-----------|------------|
+| 🇧🇷 **São Paulo (Brasil)** | 18:20 |
+| 🇺🇸 **Nova York (EUA)** | 17:20 |
+| 🇺🇸 **Los Angeles (EUA)** | 14:20 |
+| 🇩🇪 **Berlim (Alemanha)** | 23:20 |
+| 🇯🇵 **Tóquio (Japão)** | 06:20 (do dia seguinte) |
 
-**⚙️ Funcionalidades**
+---
 
-Varredura de portas TCP em um intervalo definido pelo usuário.
+## ⚠️ Aviso legal
+> O uso deste programa é **restrito a ambientes onde você tenha autorização** para realizar varreduras.  
+> Este script foi feito **para fins de aprendizado**, e **qualquer uso indevido é de total responsabilidade do usuário**.
 
-Menu interativo com opções:
+---
 
-Escanear uma faixa de portas
+## ⚙️ Funcionalidades
+- 🔍 Varredura de portas **TCP** em intervalos definidos pelo usuário.  
+- 🧭 Menu interativo com opções:
+  - Escanear uma faixa de portas
+  - Escanear todas as portas
+  - Exibir informações sobre o programa  
+- 🧩 Estrutura simples para estudar **sockets**, **loops** e **fluxo de I/O** em Python.
 
-Escanear todas as portas
+---
 
-Exibir informações sobre o programa
+## 🧠 Requisitos mínimos
+- 🐍 **Python 3.6+** (recomendado **3.8+**)
 
-Implementação simples para estudo de sockets e fluxo de I/O em Python.
+---
 
-**🧠 Requisitos mínimos**
-
-Python 3.6+ (recomendado 3.8+)
-
-### 💻 Como rodar
+## 💻 Como rodar
 
 Você pode **clonar este repositório** ou simplesmente **baixar o arquivo `realmap.py`**.
 
 ```bash
-# Clonar o repositório (opcional)
-git clone https://github.com/reallysander/realmap.git
+# Clonar o repositório
+git clone https://github.com/seuusuario/realmap.git
 
 # Entrar na pasta do projeto
 cd realmap
@@ -51,8 +60,3 @@ cd realmap
 # Executar o script
 python realmap.py
 
-
-📜 Observação
-
-Este é meu primeiro script em Python publicado.
-Pode haver bugs na primeira versão, mas o projeto será atualizado ao longo do tempo.
