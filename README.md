@@ -52,7 +52,7 @@ Você pode **clonar este repositório** ou simplesmente **baixar o arquivo `real
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seuusuario/realmap.git
+git clone https://github.com/reallysander/realmap.git
 
 # Entrar na pasta do projeto
 cd realmap
