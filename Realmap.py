@@ -1,5 +1,8 @@
 import socket
+import threading
 from time import sleep
+
+MAX_THREADS = 150  
 
 def scan(site, porta_inicial=None, porta_final=None):
     try:
@@ -11,18 +14,40 @@ def scan(site, porta_inicial=None, porta_final=None):
         porta_inicial = int(porta_inicial)
         porta_final = int(porta_final)
 
+        threads = []
+
+        def _scan_one(s, p):
+            try:
+                conexao = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                conexao.settimeout(1)
+                resultado = conexao.connect_ex((s, p))
+
+                if resultado == 0:
+                    print(f"a porta {p} está aberta")
+                else:
+                    print(f"a porta {p} está fechada!")
+
+                conexao.close()
+            except ConnectionRefusedError:
+                print(f"a conexão com a porta {p} foi recusada")
+            except Exception as e:
+                print(f"Erro na porta {p}: {e}")
+
         for porta in range(porta_inicial, porta_final + 1):
-            conexao = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            conexao.settimeout(1)                        
-            resultado = conexao.connect_ex((site, porta)) 
+           
+            while threading.active_count() > MAX_THREADS:
+                sleep(0.01)
 
-            if resultado == 0:
-                print(f"a porta {porta} está aberta")
-            else:
-                print(f"a porta {porta} está fechada!")
+            t = threading.Thread(target=_scan_one, args=(site, porta))
+            t.start()
+            threads.append(t)
 
-            conexao.close()   
-            sleep(0.10)       
+         
+            sleep(0.10)
+
+        
+        for t in threads:
+            t.join()
 
     except ConnectionRefusedError:
         print(f"a conexão com a porta {porta} foi recusada")
@@ -63,7 +88,7 @@ try:
         if escolha_int == 1:
             site = input("digite o endereço do site:  ").strip()
             porta_inicial = input("começar o scan a partir da porta?:  ").strip()
-            porta_final = input("termina o scan na porta?:  ").strip()
+            porta_final = input("terminar o scan na porta?:  ").strip()
 
             try:
                 porta_inicial = int(porta_inicial)
@@ -109,3 +134,4 @@ except socket.error:
 
 except socket.gaierror:
     print("endereço ou IP não encontrado")
+
