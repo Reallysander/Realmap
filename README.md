@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Banner do RealMap" width="600">
+  <img src="https://github.com/reallysander/realmap/blob/main/banner.png" alt="Banner do RealMap" width="600">
 </p>
 
 <h1 align="center">🛰️ RealMap — Scanner de Portas</h1>
